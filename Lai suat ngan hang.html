@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+<h1> lãi ngân hàng khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.</h1>
+<button id="tinh" onclick="tinh()" type="submit">Click để tính !</button>
+<SCript>
+    function tinh() {
+        let vay = prompt("nhập sô tiền vay: ");
+        let month = prompt("nhập số tháng: ");
+        let laixuat = prompt("nhập lãi xuất: ");
+        for (let i = 1; i <= month; i++) {
+            vay += vay * (laixuat / 100);
+
+        }
+        document.write("số tiền lãi sau " + month + "tháng là :" + vay);
+    }
+</SCript>
+</body>
+
+</html>
